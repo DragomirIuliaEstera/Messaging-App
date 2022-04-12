@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewConversationActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="New conversation"
+        android:fontFamily="serif"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textSize="19sp"
+        android:text="To:" />
+
+    <EditText
+        android:id="@+id/editTextTypePhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="@string/typePhoneNo"
+        android:inputType="phone" />
+
+    <Button
+            android:id="@+id/buttonStartNewConversation"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Start new conversation"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"/>
+
+</LinearLayout>
